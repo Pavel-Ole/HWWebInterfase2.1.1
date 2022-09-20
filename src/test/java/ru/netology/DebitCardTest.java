@@ -72,7 +72,7 @@ public class DebitCardTest {
     @Test
     void shouldEmptyCheckbox() {
         driver.get("http://localhost:9999");
-        driver.findElement(By.cssSelector("[type='text']")).sendKeys("Мамин-Сибиряк Иван");
+        driver.findElement(By.cssSelector("[type='text']")).sendKeys("Иванов Павел");
         driver.findElement(By.cssSelector("[type='tel']")).sendKeys("+79204764239");
         driver.findElement(By.className("button__text")).click();
         String text = driver.findElement(By.cssSelector("[data-test-id='agreement'].input_invalid .checkbox__text")).getText();
